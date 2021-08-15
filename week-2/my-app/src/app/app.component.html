@@ -1,0 +1,26 @@
+<!--Navbar start-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <!--Navbar items will be rendered in router-outlet-->
+    <li class="nav-item active">
+      <a routerLink="/home" class="navlink">Home</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/about" class="navlink">About</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/contact" class="navlink">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+<!--Router outlet section-->
+<div class="container">
+  <br><br>
+  <h2>Exercise 2.2 - Routing & Navigation</h2>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="alert alert-success" role="alert"></div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
