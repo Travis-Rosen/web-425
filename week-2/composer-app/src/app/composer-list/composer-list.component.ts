@@ -1,0 +1,35 @@
+import { Component, OnInit } from '@angular/core';
+
+export default class Composer {
+  fullName: string;
+  genre: string;
+
+  constructor(fullName: string, genre: string) {
+    this.fullName = fullName;
+    this.genre = genre;
+  }
+}
+
+@Component({
+  selector: 'app-composer-list',
+  templateUrl: './composer-list.component.html',
+  styleUrls: ['./composer-list.component.css']
+})
+export class ComposerListComponent implements OnInit {
+
+  composers: Array<Composer>;
+
+  constructor() {
+    this.composers = [
+      new Composer("Philip Glass", "Classical"),
+      new Composer("Wolfgang Mozart", "Classical"),
+      new Composer("Ludwig van Beethoven", "Classical"),
+      new Composer("George Benjamin", "Classical"),
+      new Composer("Nico Muhly", "Classical"),
+    ]
+  }
+
+  ngOnInit(): void {
+  }
+
+}
