@@ -1,0 +1,18 @@
+<!--
+ * Title: my-details-component.html
+ * Author: Travis Rosen
+ * Date: 22 August 2021
+ * Description: HTML component for my details
+-->
+
+<ul class="list-group">
+  <li class="list-group-item"><strong>Name: </strong>{{ myProfile.fullName }}</li>
+  <li class="list-group-item"><strong>Favorite Food: </strong>{{ myProfile.favoriteFood }}</li>
+  <li class="list-group-item"><strong>Favorite Color: </strong>{{ myProfile.favoriteColor }}</li>
+  <li class="list-group-item">
+    Keywords:
+    <span *ngFor="let word of myProfile.keywords">
+      {{ word }}
+    </span>
+  </li>
+</ul>
