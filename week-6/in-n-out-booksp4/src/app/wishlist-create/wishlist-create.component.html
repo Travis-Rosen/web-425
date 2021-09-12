@@ -1,0 +1,23 @@
+<!--
+  Author: Travis Rosen
+  Date: 09/12/2021
+  Name: wishlist-create.component.html
+  Description: HTML page for wishlist form
+-->
+
+<form fxLayout="column" class="wishlist-create-form">
+  <!--Form for wishlist item title-->
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Title</mat-label>
+    <input type="text" name="title" matInput [(ngModel)]="item.title" />
+  </mat-form-field>
+  <!--Form for wishlist item authors-->
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Authors</mat-label>
+    <input type="text" name="authors" matInput [(ngModel)]="item.authors" />
+  </mat-form-field>
+
+  <button mat-button color="primary" (click)="addItem()">Add Item</button>
+
+
+</form>
