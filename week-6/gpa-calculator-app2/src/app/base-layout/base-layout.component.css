@@ -1,0 +1,16 @@
+/*
+Author: Travis Rosen
+Date: 9.12.2021
+Name: base-layout.component.css
+Description: CSS styling for base-layout.component.html
+*/
+
+.logo {
+  margin-top: 5px;
+}
+
+.main-container {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}
