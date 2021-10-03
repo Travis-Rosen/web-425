@@ -1,0 +1,50 @@
+<div class="home-container">
+  <div fxLayout="column" style="margin: 0 auto; width: 100%">
+    <div fxFlex>
+      <mat-card>
+        <br>
+        <mat-card-content>
+          <form #checkboxForm="ngForm" (submit)="submit()">
+            <div fxLayout="row wrap" fxLayoutGap="200px grid">
+              <div fxFlex="50%">
+                <mat-card class="mat-elevation-z8">
+                  <mat-card-title class="text-center">Services:</mat-card-title>
+                  <br>
+                  <mat-card-content>
+                    <div *ngFor="let item of repairServices">
+                      <mat-checkbox value="{{item.amount}}" [(ngModel)]="item.checked" [name]="item.title" color="primary">
+                        {{ item.title }}
+
+
+                      </mat-checkbox>
+                    </div>
+                    <br>
+                    <hr class="line">
+                    <br>
+                    <mat-form-field appearance="fill" color="accent">
+                      <mat-label>Parts Total</mat-label>
+                      <input matInput [(ngModel)]="bill.partsAmount" type="number" name="parts" />
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill" color="accent">
+                      <mat-label>Labor Costs @ $10.00 per hr</mat-label>
+                      <input matInput [(ngModel)]="bill.laborAmount" type="number" name="labor" />
+                    </mat-form-field>
+                  </mat-card-content>
+                  <mat-card-actions align="end">
+                    <button mat-raised-button color="primary">Submit Order</button>
+                  </mat-card-actions>
+                </mat-card>
+              </div>
+              <div fxFlex>
+                <div>
+                  <img src="./assets/bobslogo.png" alt="" class="bobs-logo">
+                </div>
+              </div>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
