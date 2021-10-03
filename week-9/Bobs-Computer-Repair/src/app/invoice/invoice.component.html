@@ -13,16 +13,17 @@
       &nbsp; {{ item.title }} ({{ item.amount | currency }})
     </div>
     <hr>
-    <strong>Subtotal:</strong> <p>{{ bill.getShopTotal() | currency }}</p>
+    <strong>Subtotal:</strong> <p>&nbsp; {{ bill.getShopTotal() | currency }}</p>
   </div>
   <br>
+  <strong>Additional Fees:</strong>
   <p>
     &nbsp; Part Costs: {{ bill.getPartsAmount() | currency }}
     <br>
     &nbsp; Labor Costs: {{ bill.getLaborAmount() | currency }}
   </p>
   <hr>
-  <strong>Invoice Total:</strong> <p>{{ bill.getBillTotal() | currency }} </p>
+  <strong>Invoice Total:</strong> <p>&nbsp; {{ bill.getBillTotal() | currency }} </p>
 </mat-dialog-content>
 <div mat-dialog-actions align="end">
   <button mat-raised-button matDialogClose="cancel" color="primary">Cancel Order</button>
