@@ -1,3 +1,9 @@
+// Author: Travis Rosen
+// Date: 09/28/2021
+// Name: not-foundcompnent.ts
+// Description: NotFoundComponent class
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

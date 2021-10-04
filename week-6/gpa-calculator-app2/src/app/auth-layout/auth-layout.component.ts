@@ -1,3 +1,10 @@
+// Author: Travis Rosen
+// Date: 09/28/2021
+// Name: auth-layout.component.ts
+// Description: AuthLayoutClass
+
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

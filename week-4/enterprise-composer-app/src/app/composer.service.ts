@@ -1,3 +1,9 @@
+// Author: Travis Rosen
+// Date: 09/28/2021
+// Name: composer.service.ts
+// Description: Composer service class
+
+
 import { Injectable } from '@angular/core';
 import { IComposer } from './composer.interface';
 import { Observable } from 'rxjs';

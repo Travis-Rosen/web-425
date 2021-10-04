@@ -1,3 +1,7 @@
+// Author: Travis Rosen
+// Date: 09/28/2021
+// Name: app.module.ts
+// Description: Import statements
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';

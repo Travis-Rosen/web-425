@@ -1,3 +1,11 @@
+// Author: Travis Rosen
+// Date: 09/28/2021
+// Name: composer.class.ts
+// Description: Composer class file
+
+
+
+
 import { IComposer } from "./composer.interface";
 export class Composer {
   composers: Array<IComposer>;

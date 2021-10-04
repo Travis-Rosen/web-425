@@ -1,3 +1,11 @@
+// Author: Travis Rosen
+// Date: 09/28/2021
+// Name: contact.component.ts
+// Description: contact component class
+
+
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

@@ -1,3 +1,8 @@
+// Author: Travis Rosen
+// Date: 09/28/2021
+// Name: app.routing.module.ts
+// Description: Routing
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';

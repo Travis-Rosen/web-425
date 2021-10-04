@@ -1,3 +1,8 @@
+// Author: Travis Rosen
+// Date: 09/28/2021
+// Name: app.component.ts
+// Description: appcomponent class
+
 import { Component } from '@angular/core';
 
 @Component({
